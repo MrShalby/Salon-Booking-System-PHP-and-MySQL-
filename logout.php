@@ -1,26 +1,3 @@
-<?php
-session_start(); // Start the session
-
-// Unset all session variables
-$_SESSION = array();
-
-// Destroy the session
-
-
-
-
-// Clear localStorage using JavaScript
-
-
-// Redirect to the login page
-
-
-// Start the session
-session_unset(); // Unset all session variables
-session_destroy(); // Destroy the session
-
-echo "<script>localStorage.removeItem('cart');</script>";
-header("Location: index.php"); // Redirect to the home page
-exit();
-
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:39a358325646e29ec5f147633a4a41fc62bf4e9078e85bdc09346ed94929ca0d
+size 464

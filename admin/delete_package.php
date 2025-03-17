@@ -1,25 +1,3 @@
-<?php
-session_start();
-if (!isset($_SESSION['admin_logged_in'])) {
-    header('Location: a_login.php');
-    exit();
-}
-include 'db_connection.php';
-
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
-
-    // Prepare the delete statement
-    $sql = "DELETE FROM packages WHERE id = :id";
-    $stmt = $conn->prepare($sql);
-    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-    
-    if ($stmt->execute()) {
-        header('Location: manage_packages.php?message=Package deleted successfully');
-    } else {
-        header('Location: manage_packages.php?error=Failed to delete package');
-    }
-} else {
-    header('Location: manage_packages.php');
-}
-?> 
+version https://git-lfs.github.com/spec/v1
+oid sha256:20cef8894e8f3a53732144ad2840262e8e839fce377d22fd12023c88f94d4f40
+size 669

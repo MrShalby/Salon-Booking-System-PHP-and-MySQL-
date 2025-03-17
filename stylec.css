@@ -1,0 +1,208 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    height: 55px;
+    width: 120px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.contact .content {
+    margin-bottom: 50px;
+}
+
+.contact .content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact .content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 50px;
+}
+
+.contactInfo {
+    flex: 1;
+}
+
+.contactInfo .box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contactInfo .box .icon {
+    margin-right: 20px;
+}
+
+.contactInfo .box .text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contactInfo .box .text p {
+    font-size: 1rem;
+}
+
+.contactForm {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contactForm h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 1rem;
+    color: #333;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+    top: -20px;
+    left: 0;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.contactForm .inputBox input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contactForm .inputBox input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .containerr {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer .footer-col-2 p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.footer .copyright {
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contactInfo, .contactForm {
+        width: 100%;
+    }
+
+    .contactForm {
+        padding: 20px;
+    }
+}

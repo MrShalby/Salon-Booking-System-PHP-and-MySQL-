@@ -1,0 +1,35 @@
+
+.services {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+.service-container {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service h3 {
+    margin: 15px 0;
+    font-size: 20px;
+}
+.service1 {
+	width: 500px;
+    padding: 20px;
+	position: right-side;
+	
+}

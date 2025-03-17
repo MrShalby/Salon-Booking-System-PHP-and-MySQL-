@@ -1,0 +1,253 @@
+  /*----- Header Menu--*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 60px;
+    z-index: 1000;
+    display: flex;
+    
+  }
+  
+  .navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .logo img{
+    size:10px;
+    height:55px;
+    width:120px;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-links li {
+    display: inline;
+  }
+  
+  .navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar .nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-image:url('a.jpeg');
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333; 
+    font-size:15px;  
+    width:100%;
+	
+	text-align:center;
+	
+}
+h1{
+    font-size:45px;
+}
+nav ul {
+    list-style-type: none; 
+    margin:auto;
+    padding:0;  
+   
+}
+
+nav ul li {
+    display: inline;   
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#packages {
+    text-align: center;
+    justify-content: center; 
+ 
+      
+}
+.package-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.package {
+    background-color:black;
+    color:white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    height:300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.package:hover {
+    transform: scale(1.05);
+}
+
+.package h3 {
+    font-size: 1.5em;
+
+}
+
+.package .price {
+    font-size: 1.2em;
+    color:aqua;
+
+}
+
+.package ul {
+    list-style-type: none;
+    
+}
+
+.package button {
+    background-color: #3a3a3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.item{
+    align-items:center;
+}
+
+.package button:hover {
+    background-color: #555;
+}
+
+#packages .part1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#packages .part2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 300px;
+}
+
+/* in-line-icon-messeage */
+.f1{
+    color: #fafafa;
+}
+
+.f2{
+    color: #fafafa;
+}
+
+.f3{
+    color: #fafafa;
+}
+.fa-square-envelope{
+    font-size: medium;
+    color: #fafafa;
+}
+
+.fa-phone{
+    font-size: medium;
+    color:#fafafa;
+}
+
+
+.fa-phone{
+    font-size: medium;
+    color:#fafafa;
+}
+/* social icon */
+.f4{
+    font-size:15px;
+}
+.fa-envelope{
+    font-size: 20px;
+    color:#fafafa;
+}
+
+.fa-instagram{
+    font-size: 20px;
+    color:#fafafa; 
+}
+
+.fa-twitter{
+    font-size: 20px;
+    color:#fafafa; 
+}
+
+.fa-google{
+    font-size: 18px;
+    color: #fafafa;
+}
+
+.fa-youtube{
+    font-size: 20px;
+    color: #fafafa;
+}
+
+/* after hover effect */
+.fa-envelope:hover{
+    font-size: 20px;
+    color: #846b37;
+}
+
+.fa-instagram:hover{
+    font-size: 20px;
+    color: #8f184a;
+}
+
+.fa-twitter:hover{
+    font-size: 20px;
+    color:#50b1c2;
+}
+
+.fa-google:hover{
+    font-size: 20px;
+    color:#24151594;
+}
+
+.fa-youtube:hover{
+    font-size: 20px;
+    color: #e10909;
+}
+
+.part1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}

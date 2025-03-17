@@ -1,0 +1,61 @@
+.fourth{
+	background-image:url(i8.jpg);
+	background-size:cover;
+	background-position:center;
+	width:120vh;
+	height:100%;
+}
+
+.fourth h1{
+	transform:translate(600px,300px);
+	font-size:20px;
+	text-align:center;
+	font-family:Lucida Calligraphy;
+	color:violet;
+}
+.staff{
+	font-size:25px;
+	text-align:center;
+	color:green;
+	font-family:Palatino Linotype;
+}
+.meet-row{
+	width:80%;
+	margin:auto;
+	justify-content:space-between;
+	display:flex;
+}
+
+.meet-col{
+	padding:10px;
+	margin-bottom:30px;
+	border-radius:10px;
+	flex-basis:28%;
+	box-shadow:0 10px 20px 5px skyblue;
+	cursor:pointer;
+	transition:transform 0.5s;
+	color:blue;
+	font-family:arial;
+	background-color:lightgrey;
+}
+
+.meet-col:hover{
+	transform:scale(1.2); 
+}
+
+.meet-col img{
+	width:40px;
+	margin-right:20px;
+	border-radius:3px;
+}
+
+.meet2{
+	width:80%;
+	margin:auto;
+	justify-content:space-between;
+	display:flex;
+}
+
+
+
+

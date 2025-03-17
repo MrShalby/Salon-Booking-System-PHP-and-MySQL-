@@ -1,0 +1,290 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightcoral;
+}
+
+/* Header Menu */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 60px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 55px;
+    width: 120px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.navbar .nav-links li {
+    display: inline;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.navbar .nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Dropdown Menu */
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+/* Hero Section */
+.first {
+    background-image: url('ab.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.one {
+    font-size: 45px;
+    font-family: Arial Narrow Bold;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    backdrop-filter: blur(2px);
+}
+
+.two {
+    font-size: 25px;
+    font-family: Arial Narrow Bold;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    backdrop-filter: blur(2px);
+}
+
+/* About Section */
+.heading {
+    text-align: center;
+    font-size: 65px;
+    font-style: oblique;
+    margin-top: 50px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: lightgoldenrodyellow;
+}
+
+.service-container img {
+    width: 740px;
+    height: 600px;
+    margin-right: 100px;
+    border-radius: 10px;
+}
+
+.service1 {
+    max-width: 600px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    
+}
+
+/* Specialist Section */
+.meet-row, .meet2 {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.meet-col {
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    flex-basis: 28%;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.meet-col:hover {
+    transform: scale(1.2);
+}
+
+.meet-col img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .service-container img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .meet-row, .meet2 {
+        flex-direction: column;
+    }
+
+    .meet-col {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}/* Service Container */
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: lightgoldenrodyellow;
+    gap: 50px; /* Adds space between image and text */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.service-container img {
+    width: 600px; /* Adjust as needed */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+.service1 {
+    max-width: 600px; /* Adjust as needed */
+    font-size: 2.5vh; /* Responsive font size */
+    line-height: 1.6; /* Improves readability */
+    color: #333;
+    letter-spacing: 1.5px; /* Adds spacing between letters */
+    text-align: justify; /* Justifies the text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .service-container img {
+        width: 100%; /* Full width on smaller screens */
+        height: auto;
+    }
+
+    .service1 {
+        max-width: 100%; /* Full width on smaller screens */
+        font-size: 2vh; /* Smaller font size for mobile */
+    }
+}

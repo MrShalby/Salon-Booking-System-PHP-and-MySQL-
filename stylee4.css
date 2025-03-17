@@ -1,0 +1,28 @@
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	height:100%;
+	width:100%;
+	background-color: rgb(235, 218, 208);
+}
+#photo-container {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin-left:7%;
+	margin-right:3.5%;
+	box-shadow:0 10px 20px 5px black;
+}/*
+#photo-container #eff:hover{
+	transform:scale(1.2); 
+}
+	*/
+img {
+	width: 30%;
+	height: auto;
+	margin: 10px;
+	border-radius: 8px;
+}

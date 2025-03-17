@@ -1,0 +1,55 @@
+.four
+{
+	margin:auto;
+	align-items:center;
+	color:green;
+	font-size:35px;
+	padding-left:325px;
+	font-family:arial;
+	background-size:cover;
+	background-color:lightgrey;
+	height:100%;
+}
+
+h1
+	{
+	align-items:center;
+	color:blue;
+	font-size:45px;
+	margin:auto;
+	margin-left:100px;
+	}
+	
+.box
+{
+	width:40%;
+	height:500px; 
+	padding:5px 0px 15px;
+	margin-bottom:15px;
+	margin-top:20px;
+	border:2px solid black;
+	align-items:center;
+	margin-left:150px;
+	background-color:pink;
+}
+
+.box:hover{
+		transition:transform 0.5s;
+		cursor:pointer;
+		transform:translateY(25px);
+}
+
+.box input{
+	font-size:15px;
+	align-items:center;
+}
+
+.box label{
+	width:20%;
+	height:25px; 
+	padding:5px 0px 5px;
+	margin-bottom:5px;
+	margin-top:5px;
+	border:2px solid black;
+	background-color:skyblue;
+}
